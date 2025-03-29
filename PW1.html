@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Веб калькулятор</title>
+    <meta charset="UTF-8">
+    <script src="PW1.js"></script>
+    <link rel="stylesheet" href="PW1_style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h2>Калькулятор 1</h2>
+
+            <form id="fuelForm">
+                H<sup>p</sup>,%: <input type="number" id="hp" name="hp"><br>
+                C<sup>p</sup>,%: <input type="number" id="cp" name="cp"><br>
+                S<sup>p</sup>,%: <input type="number" id="sp" name="sp"><br>
+                N<sup>p</sup>,%: <input type="number" id="np" name="np"><br>
+                O<sup>p</sup>,%: <input type="number" id="op" name="op"><br>
+                W<sup>p</sup>,%: <input type="number" id="wp" name="wp"><br>
+                A<sup>p</sup>,%: <input type="number" id="ap" name="ap"><br>
+                <input type="button" value="Розрахувати" onclick="calculate_1()">
+            </form>
+
+            <p id="result"></p>
+        </div>
+
+        <div>
+            <h2>Калькулятор 2</h2>
+
+            <form id="fuelForm2">
+                C<sup>г</sup>,%: <input type="number" id="cf" name="cf"><br>
+                H<sup>г</sup>,%: <input type="number" id="hf" name="hf"><br>
+                O<sup>г</sup>,%: <input type="number" id="of" name="of"><br>
+                S<sup>г</sup>,%: <input type="number" id="sf" name="sf"><br>
+                Нижча теплота згоряння горючої маси мазуту, МДж/кг;: <input type="number" id="x1" name="x1"><br>
+                Вологість робочої маси палива,%: <input type="number" id="x2" name="x2"><br>
+                Зольність сухої маси,%: <input type="number" id="x3" name="x3"><br>
+                Вміст ванадію (V), мг/кг: <input type="number" id="v" name="v"><br>
+                <input type="button" value="Розрахувати" onclick="calculate_2()">
+            </form>
+
+            <p id="result2"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
